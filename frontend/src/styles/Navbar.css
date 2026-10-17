@@ -1,0 +1,395 @@
+/* =====================================
+   MAIN NAVBAR
+===================================== */
+
+.carebridge-navbar {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e9ed;
+
+  padding: 18px 0;
+  height: 75px;
+
+  position: sticky;
+  top: 0;
+
+  z-index: 1000;
+
+  box-shadow: 0 2px 10px rgba(27, 50, 72, 0.03);
+}
+
+/* =====================================
+   BRAND
+===================================== */
+
+.brand-name {
+  color: #17324d !important;
+
+  font-size: 27px;
+  font-weight: 700;
+
+  letter-spacing: -0.6px;
+
+  margin-right: 25px;
+}
+
+/* =====================================
+   NAVIGATION LINKS
+===================================== */
+
+.carebridge-navbar .nav-link {
+  position: relative;
+
+  color: #596572;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  margin: 0 6px;
+
+  padding: 10px 3px !important;
+
+  transition: 0.2s ease;
+}
+
+.carebridge-navbar .nav-link:hover {
+  color: #17324d;
+}
+
+.carebridge-navbar .nav-link.active {
+  color: #17324d;
+  font-weight: 600;
+}
+
+/* Small underline */
+
+.carebridge-navbar .nav-link.active::after {
+  content: "";
+
+  position: absolute;
+
+  left: 3px;
+  right: 3px;
+  bottom: 2px;
+
+  height: 2px;
+
+  background: #c78f68;
+
+  border-radius: 5px;
+}
+
+/* =====================================
+   LOGIN / REGISTER
+===================================== */
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+}
+
+.login-link {
+  color: #17324d;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  padding: 9px 4px;
+}
+
+.login-link:hover {
+  color: #315f8c;
+}
+
+.register-btn {
+  background: #17324d;
+  color: #ffffff;
+
+  text-decoration: none;
+
+  padding: 10px 19px;
+
+  border-radius: 6px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  transition: 0.2s ease;
+}
+
+.register-btn:hover {
+  background: #315f8c;
+  color: #ffffff;
+}
+
+/* =====================================
+   ACCOUNT MENU
+===================================== */
+
+.account-menu {
+  position: relative;
+
+  flex-shrink: 0;
+}
+
+.account-button {
+  min-width: 145px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+
+  border: 1px solid #dce2e7;
+
+  background: #f8fafb;
+
+  padding: 7px 11px 7px 8px;
+
+  border-radius: 7px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.account-button:hover {
+  border-color: #bcc9d4;
+  background: #ffffff;
+}
+
+/* INITIAL */
+
+.account-initial {
+  width: 31px;
+  height: 31px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #203b55;
+  color: #ffffff;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.account-button-text {
+  color: #243d53;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+.account-arrow {
+  color: #71808e;
+
+  font-size: 12px;
+
+  margin-left: auto;
+
+  transition: transform 0.2s ease;
+}
+
+.account-arrow-open {
+  transform: rotate(180deg);
+}
+
+/* =====================================
+   DROPDOWN
+===================================== */
+
+.account-dropdown {
+  position: absolute;
+
+  top: calc(100% + 10px);
+  right: 0;
+
+  width: 210px;
+
+  background: #ffffff;
+
+  border: 1px solid #e0e5ea;
+
+  border-radius: 8px;
+
+  box-shadow: 0 12px 35px rgba(26, 49, 70, 0.12);
+
+  padding: 8px;
+
+  z-index: 2000;
+}
+
+.account-dropdown-header {
+  display: flex;
+  flex-direction: column;
+
+  padding: 10px 11px 12px;
+
+  border-bottom: 1px solid #edf0f2;
+
+  margin-bottom: 5px;
+}
+
+.account-dropdown-header span {
+  color: #8a949e;
+
+  font-size: 11px;
+
+  margin-bottom: 2px;
+}
+
+.account-dropdown-header strong {
+  color: #243d53;
+
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.account-dropdown-link {
+  display: block;
+
+  color: #455666;
+
+  text-decoration: none;
+
+  padding: 10px 11px;
+
+  border-radius: 5px;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  transition: 0.15s ease;
+}
+
+.account-dropdown-link:hover {
+  background: #f4f7f9;
+  color: #203b55;
+}
+
+.account-dropdown-divider {
+  height: 1px;
+
+  background: #edf0f2;
+
+  margin: 5px 0;
+}
+
+/* LOGOUT */
+
+.account-logout {
+  width: 100%;
+
+  border: none;
+
+  background: transparent;
+
+  color: #a34f4f;
+
+  text-align: left;
+
+  padding: 10px 11px;
+
+  border-radius: 5px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.15s ease;
+}
+
+.account-logout:hover {
+  background: #faf0f0;
+}
+
+/* =====================================
+   MOBILE TOGGLER
+===================================== */
+
+.navbar-toggler {
+  border: 1px solid #d6dce2 !important;
+
+  box-shadow: none !important;
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media (max-width: 1199px) {
+
+  .carebridge-navbar .nav-link {
+    font-size: 13px;
+
+    margin: 0 3px;
+  }
+
+  .brand-name {
+    font-size: 25px;
+
+    margin-right: 15px;
+  }
+
+  .account-button {
+    min-width: 130px;
+  }
+}
+
+@media (max-width: 991px) {
+
+  .carebridge-navbar {
+    padding: 15px 0;
+  }
+
+  .carebridge-navbar .navbar-collapse {
+    padding-top: 18px;
+  }
+
+  .carebridge-navbar .nav-link {
+    display: inline-block;
+
+    margin: 3px 0;
+
+    padding: 8px 3px !important;
+  }
+
+  .navbar-actions {
+    margin-top: 15px;
+
+    padding-bottom: 5px;
+  }
+
+  .account-menu {
+    margin-top: 15px;
+
+    width: fit-content;
+  }
+
+  .account-dropdown {
+    position: static;
+
+    width: 210px;
+
+    margin-top: 7px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .brand-name {
+    font-size: 23px;
+  }
+}

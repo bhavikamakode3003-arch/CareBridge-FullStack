@@ -1,0 +1,877 @@
+/* ==============================
+   ADMIN COMMON
+================================ */
+
+.admin-page {
+  min-height: 100vh;
+  background: #e3e7ed;
+}
+
+.admin-header {
+  background: #1d344a;
+  color: #ffffff;
+  padding: 55px 0;
+}
+
+.admin-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+
+.admin-header p,
+.admin-section-heading p {
+  color: #e0b38c;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  margin-bottom: 8px;
+}
+
+.admin-header h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.admin-header span {
+  color: #d0dae3;
+  font-size: 14px;
+}
+
+.admin-home-btn {
+  flex-shrink: 0;
+  background: #ffffff;
+  color: #203b55;
+  text-decoration: none;
+  padding: 10px 19px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.admin-home-btn:hover {
+  color: #203b55;
+  background: #f0f3f6;
+}
+
+.admin-content {
+  padding: 55px 0 80px;
+}
+
+/* ==============================
+   STATS
+================================ */
+
+.admin-stat-card {
+  height: 100%;
+  background: #ffffff;
+  border: 1px solid #e0e5ea;
+  border-radius: 8px;
+  padding: 25px;
+}
+
+.admin-stat-card > span {
+  color: #687582;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.admin-stat-card h2 {
+  color: #203b55;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 12px 0 5px;
+}
+
+.admin-stat-card p {
+  color: #89939d;
+  font-size: 13px;
+  margin: 0;
+}
+
+/* ==============================
+   ADMIN SECTION
+================================ */
+
+.admin-section {
+  margin-top: 55px;
+}
+
+.admin-section-heading {
+  margin-bottom: 25px;
+}
+
+.admin-section-heading h2 {
+  color: #172b3f;
+  font-size: 29px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* ==============================
+   MANAGEMENT CARDS
+================================ */
+
+.admin-management-card {
+  display: block;
+  height: 100%;
+  background: #ffffff;
+  border: 1px solid #e0e5ea;
+  border-radius: 8px;
+  padding: 25px;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.admin-management-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(28, 55, 80, 0.07);
+}
+
+.admin-management-card > span {
+  display: block;
+  color: #9ba6b1;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.admin-management-card h4 {
+  color: #21394f;
+  font-size: 18px;
+  font-weight: 650;
+  margin-bottom: 9px;
+}
+
+.admin-management-card p {
+  color: #747f8a;
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ==============================
+   TABLE
+================================ */
+
+.admin-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  background: #ffffff;
+  border: 1px solid #e0e5ea;
+  border-radius: 8px;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table th {
+  background: #f7f9fb;
+  color: #506070;
+  font-size: 13px;
+  font-weight: 650;
+  text-align: left;
+  padding: 15px 18px;
+  border-bottom: 1px solid #e0e5ea;
+  white-space: nowrap;
+}
+
+.admin-table td {
+  color: #65717d;
+  font-size: 13px;
+  padding: 17px 18px;
+  border-bottom: 1px solid #edf0f2;
+  white-space: nowrap;
+}
+
+.admin-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* ==============================
+   STATUS
+================================ */
+
+.admin-status {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.admin-pending {
+  background: #fff3e6;
+  color: #a16640;
+}
+
+.admin-approved {
+  background: #edf2f7;
+  color: #315f8c;
+}
+
+.admin-active {
+  background: #edf1f5;
+  color: #203b55;
+}
+
+.admin-rejected {
+  background: #f9ecec;
+  color: #a64a4a;
+}
+
+/* ==============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+
+  .admin-header {
+    padding: 45px 0;
+  }
+
+  .admin-header-content {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .admin-header h1 {
+    font-size: 30px;
+  }
+
+  .admin-section-heading h2 {
+    font-size: 25px;
+  }
+}
+
+/* Manage Users */
+
+/* ==============================
+   ADMIN TOOLBAR
+================================ */
+
+.admin-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 22px;
+}
+
+.admin-search-box {
+  width: 100%;
+  max-width: 430px;
+}
+
+.admin-search-box input,
+.admin-filter-box select {
+  width: 100%;
+  height: 44px;
+  border: 1px solid #d5dce2;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #34495b;
+  padding: 0 13px;
+  font-size: 13px;
+  outline: none;
+}
+
+.admin-search-box input:focus,
+.admin-filter-box select:focus {
+  border-color: #315f8c;
+  box-shadow: 0 0 0 3px rgba(49, 95, 140, 0.08);
+}
+
+.admin-filter-box {
+  width: 180px;
+}
+
+/* ==============================
+   ADMIN ACTIONS
+================================ */
+
+.admin-delete-btn {
+  border: 1px solid #d9a5a5;
+  background: #ffffff;
+  color: #a64a4a;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.admin-delete-btn:hover {
+  background: #f9ecec;
+}
+
+.admin-empty-message {
+  text-align: center !important;
+  color: #8a949e !important;
+  padding: 30px !important;
+}
+
+.admin-table-footer {
+  margin-top: 12px;
+  color: #7a8590;
+  font-size: 12px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .admin-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .admin-search-box,
+  .admin-filter-box {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Manage NGO */
+
+/* ==============================
+   STATUS SELECT
+================================ */
+
+.admin-status-select {
+  min-width: 120px;
+  height: 36px;
+
+  border: 1px solid #d5dce2;
+  border-radius: 5px;
+
+  background: #ffffff;
+  color: #425466;
+
+  padding: 0 9px;
+
+  font-size: 12px;
+  outline: none;
+
+  cursor: pointer;
+}
+
+.admin-status-select:focus {
+  border-color: #315f8c;
+  box-shadow: 0 0 0 3px rgba(49, 95, 140, 0.08);
+}
+
+
+
+
+/* =====================================
+   CUSTOM CONFIRM POPUP
+===================================== */
+
+.confirm-overlay {
+  position: fixed;
+  inset: 0;
+
+  background: rgba(20, 32, 44, 0.45);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  z-index: 9999;
+}
+
+.confirm-popup {
+  width: 100%;
+  max-width: 410px;
+
+  background: #ffffff;
+
+  border: 1px solid #e0e5ea;
+  border-radius: 10px;
+
+  padding: 30px;
+
+  text-align: center;
+
+  box-shadow: 0 20px 60px rgba(25, 45, 65, 0.22);
+}
+
+.confirm-popup h3 {
+  color: #1f3448;
+
+  font-size: 21px;
+  font-weight: 700;
+
+  margin-bottom: 10px;
+}
+
+.confirm-popup p {
+  color: #74808b;
+
+  font-size: 14px;
+  line-height: 1.6;
+
+  margin-bottom: 25px;
+}
+
+.confirm-popup-actions {
+  display: flex;
+  justify-content: center;
+
+  gap: 12px;
+}
+
+.confirm-cancel-btn,
+.confirm-ok-btn {
+  min-width: 115px;
+
+  padding: 10px 18px;
+
+  border-radius: 6px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.confirm-cancel-btn {
+  background: #ffffff;
+
+  border: 1px solid #ccd5dd;
+
+  color: #5d6975;
+}
+
+.confirm-cancel-btn:hover {
+  background: #f4f6f8;
+}
+
+.confirm-ok-btn {
+  border: none;
+
+  background: #203b55;
+
+  color: #ffffff;
+}
+
+.confirm-ok-btn:hover {
+  background: #315f8c;
+}
+
+@media (max-width: 480px) {
+
+  .confirm-popup {
+    padding: 25px 20px;
+  }
+
+  .confirm-popup-actions {
+    flex-direction: column-reverse;
+  }
+
+  .confirm-cancel-btn,
+  .confirm-ok-btn {
+    width: 100%;
+  }
+}
+
+/* =========================
+   USER STATUS ACTION BUTTONS
+========================= */
+
+.admin-block-btn,
+.admin-activate-btn {
+  border: none;
+  padding: 7px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.admin-block-btn {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.admin-activate-btn {
+  background: #e7f6ec;
+  color: #257942;
+}
+
+.admin-block-btn:hover,
+.admin-activate-btn:hover {
+  opacity: 0.85;
+}
+
+.admin-block-btn:disabled,
+.admin-activate-btn:disabled,
+.admin-delete-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ========================================
+   MANAGE NEEDS CRUD
+======================================== */
+
+.admin-add-btn {
+  border: none;
+  padding: 10px 18px;
+  border-radius: 7px;
+  background: #183153;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.admin-add-btn:hover {
+  opacity: 0.9;
+}
+
+.admin-need-form {
+  margin-bottom: 30px;
+  padding: 25px;
+  border: 1px solid #e4e7ec;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.admin-form-title {
+  margin-bottom: 20px;
+}
+
+.admin-form-title h3 {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.admin-form-title p {
+  margin: 0;
+  color: #667085;
+  font-size: 14px;
+}
+
+.admin-need-form label {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.admin-need-form input,
+.admin-need-form select,
+.admin-need-form textarea {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #d0d5dd;
+  border-radius: 7px;
+  outline: none;
+  font-size: 14px;
+}
+
+.admin-need-form input:focus,
+.admin-need-form select:focus,
+.admin-need-form textarea:focus {
+  border-color: #183153;
+}
+
+.admin-need-form textarea {
+  resize: vertical;
+}
+
+.admin-form-actions,
+.admin-action-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.admin-save-btn {
+  border: none;
+  border-radius: 7px;
+  padding: 10px 18px;
+  background: #183153;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.admin-form-cancel-btn {
+  border: 1px solid #d0d5dd;
+  border-radius: 7px;
+  padding: 9px 18px;
+  background: white;
+  cursor: pointer;
+}
+
+.admin-edit-btn {
+  border: none;
+  border-radius: 6px;
+  padding: 7px 13px;
+  background: #eef2f7;
+  color: #183153;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.admin-edit-btn:hover,
+.admin-save-btn:hover {
+  opacity: 0.9;
+}
+
+.admin-save-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+/* ============================= */
+/* MANAGE USERS - EDIT POPUP */
+/* ============================= */
+
+.cb-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 20px;
+}
+
+.cb-popup-box {
+  width: 100%;
+  max-width: 500px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.18);
+  animation: adminPopupOpen 0.2s ease;
+}
+
+@keyframes adminPopupOpen {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cb-popup-box h3 {
+  margin: 0 0 22px;
+  font-size: 25px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.admin-form-group {
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.admin-form-group label {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.admin-form-group input,
+.admin-form-group select {
+  width: 100%;
+  padding: 11px 13px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  background: #ffffff;
+  transition: 0.2s;
+}
+
+.admin-form-group input:focus,
+.admin-form-group select:focus {
+  border-color: #333333;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.06);
+}
+
+.cb-popup-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.cb-popup-cancel,
+.cb-popup-ok {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 22px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.cb-popup-cancel {
+  background: #eeeeee;
+  color: #333333;
+}
+
+.cb-popup-cancel:hover {
+  background: #dddddd;
+}
+
+.cb-popup-ok {
+  background: #222222;
+  color: #ffffff;
+}
+
+.cb-popup-ok:hover {
+  background: #000000;
+}
+
+/* DELETE POPUP TEXT */
+
+.cb-popup-box > p {
+  margin: 0;
+  color: #666666;
+  line-height: 1.6;
+}
+
+/* ============================= */
+/* MANAGE USERS ACTION BUTTONS */
+/* ============================= */
+
+.admin-action-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.admin-edit-btn,
+.admin-delete-btn {
+  border: none;
+  border-radius: 6px;
+  padding: 7px 13px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.admin-edit-btn {
+  background: #eeeeee;
+  color: #222222;
+}
+
+.admin-edit-btn:hover {
+  background: #dddddd;
+}
+
+.admin-delete-btn {
+  background: #222222;
+  color: #ffffff;
+}
+
+.admin-delete-btn:hover {
+  background: #000000;
+}
+
+/* ============================= */
+/* MANAGE USERS SEARCH */
+/* ============================= */
+
+.admin-search-box input {
+  width: 280px;
+  max-width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+}
+
+.admin-search-box input:focus {
+  border-color: #333333;
+}
+
+/* MOBILE */
+
+@media (max-width: 576px) {
+  .cb-popup-box {
+    padding: 22px 18px;
+  }
+
+  .cb-popup-actions {
+    flex-direction: column;
+  }
+
+  .cb-popup-cancel,
+  .cb-popup-ok {
+    width: 100%;
+  }
+
+  .admin-action-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .admin-search-box {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .admin-search-box input {
+    width: 100%;
+  }
+}
+/* ============================= */
+/* MANAGE NEEDS POPUP */
+/* ============================= */
+
+.admin-large-popup {
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.admin-form-group textarea {
+  width: 100%;
+  padding: 11px 13px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  resize: vertical;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.admin-form-group textarea:focus {
+  border-color: #333333;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.06);
+}
+/* DONATION REJECTED STATUS */
+
+.admin-rejected {
+  background: #fde8e8;
+  color: #b42318;
+}

@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #edf1f4;
+  color: #1f2933;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+
+/* =========================================
+   CAREBRIDGE COMMON POPUP
+========================================= */
+
+.cb-popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 32, 44, 0.48);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+  z-index: 9999;
+}
+
+.cb-popup-box {
+  width: 100%;
+  max-width: 410px;
+
+  background: #ffffff;
+  border: 1px solid #e0e5ea;
+  border-radius: 10px;
+
+  padding: 30px;
+
+  text-align: center;
+
+  box-shadow: 0 20px 60px rgba(25, 45, 65, 0.22);
+}
+
+.cb-popup-box h3 {
+  color: #1f3448;
+  font-size: 21px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.cb-popup-box p {
+  color: #74808b;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.cb-popup-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.cb-popup-cancel,
+.cb-popup-ok {
+  min-width: 115px;
+  padding: 10px 18px;
+
+  border-radius: 6px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.cb-popup-cancel {
+  background: #ffffff;
+  border: 1px solid #ccd5dd;
+  color: #5d6975;
+}
+
+.cb-popup-cancel:hover {
+  background: #f4f6f8;
+}
+
+.cb-popup-ok {
+  border: none;
+  background: #203b55;
+  color: #ffffff;
+}
+
+.cb-popup-ok:hover {
+  background: #315f8c;
+}
+
+.cb-success-ok {
+  min-width: 125px;
+}
+
+@media (max-width: 480px) {
+  .cb-popup-box {
+    padding: 25px 20px;
+  }
+
+  .cb-popup-actions {
+    flex-direction: column-reverse;
+  }
+
+  .cb-popup-cancel,
+  .cb-popup-ok {
+    width: 100%;
+  }
+}

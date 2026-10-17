@@ -1,0 +1,63 @@
+.carebridge-footer {
+  background: #15283b;
+  color: #ffffff;
+  padding: 55px 0 20px;
+  margin-top: 0;
+}
+
+.footer-main h3 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.footer-main h5 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.footer-description {
+  color: #cbd5df;
+  line-height: 1.8;
+  max-width: 430px;
+  font-size: 14px;
+}
+
+.footer-tagline {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 18px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.footer-links a {
+  color: #cbd5df;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+  padding-left: 3px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #31465a;
+  margin-top: 20px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: #9eacba;
+  font-size: 13px;
+}

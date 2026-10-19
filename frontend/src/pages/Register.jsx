@@ -159,7 +159,7 @@ function Register() {
       };
 
       await axios.post(
-        "http://localhost:8080/api/users/register",
+        https://carebridge-fullstack-production.up.railway.app,
         newUser
       );
 

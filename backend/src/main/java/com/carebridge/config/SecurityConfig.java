@@ -1,4 +1,4 @@
-```java
+
 package com.carebridge.config;
 
 import java.util.List;
@@ -55,4 +55,3 @@ public class SecurityConfig {
         return http.build();
     }
 }
-```

@@ -158,10 +158,12 @@ function Register() {
         role: formData.role,
       };
 
-      await axios.post(
-        "https://carebridge-fullstack-production.up.railway.app",
-        newUser
-      );
+      ```jsx
+await axios.post(
+  "https://carebridge-fullstack-production.up.railway.app/api/users/register",
+  newUser
+);
+```
 
       setErrors({});
       setShowSuccessPopup(true);
